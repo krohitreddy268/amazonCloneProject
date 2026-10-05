@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/checkout_header.css">
+    <link rel="stylesheet" href="styles/checkout_order_review.css">
+
+</head>
+
+<body>
+
+    <header class="checkout-header">
+
+        <div class="checkout-left-section">
+            <picture>
+                <source media="(max-width: 550px)" srcset="images/header/amazon-mobile-logo.png">
+                <img src="images/header/amazon-logo.png" class="amazon-logo">
+            </picture>
+        </div>
+
+        <div class="checkout-middle-section">
+            <p class="checkout-name">Checkout</p>
+
+            <p class="total-checkout-items js-total-checkout-items"></p>
+        </div>
+
+        <div class="checkout-right-section">
+
+            <img src="images/header/checkout-lock-icon.png">
+
+        </div>
+
+    </header>
+
+
+
+    <div class="order-review-container js-order-review-container"></div>
+
+
+</body>
+
+<script type="module" src="script/checkout.js"></script>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>AMAZON CLONE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/main-header.css">
+    <link rel="stylesheet" href="styles/products.css">
+    
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="amazon-logo-container">
+            <picture>
+            <source media="(max-width: 550px)" srcset="images/header/amazon-mobile-logo-white.png">
+            <img src="images/header/amazon-logo-white.png" class="amazon-logo">
+            </picture>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search" class="search-input">
+            <div class="search-icon-container">
+                <img src="images/header/search-icon.png" class="search-icon">
+            </div>
+        </div>
+
+        <nav class="orders-navigation">
+            <p class="returns-orders">Returns<br><b>& Orders</b><span></span></p>
+            <a href="cart.html">
+            <div class="cart-container">
+
+                <div class="cart-number-conatiner">
+                    <img src="images/header/cart-icon.png" class="cart-icon">
+                    <div class="cart-number js-cart-number">0</div>
+                </div>
+
+                <p class="cart-name">Cart</p>
+            </div>
+            </a>
+        </nav>
+
+        <nav class="orders-mobile-navigation">
+        <!--   <p class="returns-orders">Returns<br><b>& Orders</b><span></span></p>
+            <div class="cart-container">
+
+                <div class="cart-number-conatiner">
+                    <img src="images/header/cart-icon.png" class="cart-icon">
+                    <div class="cart-number">3</div>
+                </div>
+
+                <p class="cart-name">Cart</p> 
+            </div> -->
+
+            <img src="images/header/hamburger-menu.png">
+        </nav>
+
+
+
+    </header>
+
+    <div class="products-main-container js-products-main-container"></div>
+
+</body>
+
+
+<script type="module" src="script/amazon.js"></script>
+
+</html>
